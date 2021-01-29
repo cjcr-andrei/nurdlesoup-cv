@@ -6,7 +6,5 @@ RUN apt-get update \
     && apt-get install -yqq git \
 	&& apt-get install make -yqq \
 	&& git clone https://github.com/AlexeyAB/darknet ~/darknet
-
-WORKDIR ~/darknet
-
-RUN make
+	&& cd ~/darknet/
+	&& make
