@@ -4,6 +4,6 @@ RUN apt-get update \
     && apt-get upgrade -yqq \
     && apt-get install -yqq --no-install-recommends \
     && apt-get install -yqq git \
-	&& git clone https://github.com/AlexeyAB/darknet ~ \
+	&& git clone https://github.com/AlexeyAB/darknet ~/darknet \
 	&& cd ~ \
 	&& make
